@@ -1,37 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <!----Cargar la hoja de estilo----->
     <link rel="stylesheet" href="../CSS/styleIndex.css">
+    <!----llama el CDN de font awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../CSS/animations.css" />
 </head>
+
 <body>
     <header>
-        <ul>
-            <li>
-                <a href="">
-                    Home
-                </a>
-            </li>
-            <li>
-                <a href="imagenes.html" target="_blank">
-                    Imágenes
-                </a>
-            </li>
-                    
-            <li>
-                <a href="">
-                    Acerca de
-                </a>
-            </li>
-        </ul>
+        <nav id="menu_1">
+            <ul>
+                <li>
+                    <a href="">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="imagenes.html" target="_blank">
+                        Imágenes
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        Acerca de
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav id="submenu_1">
+            <ul>
+                <li>
+                    <a href="">
+                        Home 1
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Home 2
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        Home 3
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!---------- ICONOS DEL MENU  -------->
+        <i id="icon" class="fas fa-bars"></i>
+        <input type="checkbox" id="menu" />
+        <!--------------------- MENU DESPLEGABLE -------------->
+
+        <nav id="menu_2">
+            <ul>
+                <li>
+                    <a href="">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="imagenes.html" target="_blank">
+                        Imágenes
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        Acerca de
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
     </header>
-    
+
     <main>
+        <div id="cabecera">
+            <h1>Discoteca</h1>
+        </div>
+        <div id="cuerpo">
+            El diseño Web responsive es una práctica en diseño y desarrollo web que da prioridad a una interfaz
+            amigable para el usuario, sin importar el dispositivo que utilice o el tamaño y orientación de su
+            pantalla. El diseño del sitio debe ser capaz de adaptarse a cualquier resolución con la que se
+            acceda al sitio para consumir su contenido.
+        </div>
+        <section id="contenedor">
+            <div>
+                <p>
+                    El diseño Web responsive es una práctica en diseño y desarrollo web que da prioridad a una interfaz
+                    amigable para el usuario, sin importar el dispositivo que utilice o el tamaño y orientación de su
+                    pantalla. El diseño del sitio debe ser capaz de adaptarse a cualquier resolución con la que se
+                    acceda al sitio para consumir su contenido.
+                </p>
+            </div>
+        </section>
         <section>
-            <img src="../images/building-6528075_1920.jpg"/>
+            <img id="img1"
+                src="https://vignette.wikia.nocookie.net/en.futurama/images/7/74/Abner_Doubledeal.jpg/revision/latest/scale-to-width-down/350?cb=20090723100227" />
+            <img id="img2"
+                src="https://vignette.wikia.nocookie.net/en.futurama/images/c/c3/ColleenO%27Hallahan.png/revision/latest/scale-to-width-down/350?cb=20111007120515" />
         </section>
     </main>
 
@@ -39,4 +117,5 @@
         by <span>UPB</span>
     </footer>
 </body>
+
 </html>

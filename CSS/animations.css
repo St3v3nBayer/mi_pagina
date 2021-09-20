@@ -1,0 +1,91 @@
+#cabecera{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(9, 0, 92);
+    /*animation: cambiarColor 4s ease-in-out infinite;*/
+    /*animation: discoteca 4s ease-in-out infinite;*/
+}
+
+h1{
+    font-size: 4rem;
+    margin: 0px;
+    color:azure;
+    /*animation: mover 4s ease-in-out infinite;*/
+}
+#cuerpo{
+    background-color: crimson;
+    width: 100px;
+    height: 100px;
+    margin: 1rem;
+    overflow: hidden;
+    transition: width 2s, height 4s;
+}
+#cuerpo:hover{
+    width: 500px;
+    height: 200px;
+}
+#submenu_1{
+    overflow: hidden;
+    width: 100px;
+    height: 5px; 
+    transition: width 2s, height 2s;       
+}
+#submenu_1:hover{
+    position: absolute;
+    width: 100px;
+    height: 150px; 
+}
+/************* ANIMACIONES ********************/
+@keyframes cambiarColor{
+    from{
+        background-color: aqua;
+    }
+    to{
+        background-color: rgb(255, 47, 47);
+    }    
+}
+
+@keyframes discoteca {
+    0%{
+        background-color: green;
+    }
+    20%{
+        background-color: rgb(128, 0, 0);
+    }
+    40%{
+        background-color: rgb(46, 230, 230);
+    }
+    60%{
+        background-color: rgb(126, 128, 0);
+    }
+    80%{
+        background-color: rgb(208, 128, 240);
+    }
+}
+
+@keyframes mover{
+    0%{
+       transform: translateY(0px);
+    }
+    12.5%{
+        transform: translateX(40%) translateY(120px);
+    }    
+    25%{
+        transform: translateX(80%) translateY(0px);
+    }
+    37.5%{
+        transform: translateX(40%) translateY(120px);
+    }
+    50%{
+        transform: translateX(80%) translateY(200px);
+    }
+    62.5%{
+        transform: translateX(40%) translateY(120px);
+    }
+    75%{
+        transform: translateX(0%) translateY(200px);
+    }
+    87.5%{
+        transform: translateX(40%) translateY(120px);
+    }
+}
